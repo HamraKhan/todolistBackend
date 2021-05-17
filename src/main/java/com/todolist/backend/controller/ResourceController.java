@@ -6,6 +6,7 @@ import org.springframework.web.bind.annotation.*;
 import java.util.ArrayList;
 
 @RestController
+@RequestMapping("/backend")
 public class ResourceController {
     @GetMapping("/todolist")
     public ArrayList<TodoList> getTodoList() {
